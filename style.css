@@ -1,0 +1,48 @@
+.calculator {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  background-image: url('img/Cuplikan\ layar\ 2023-06-18\ 222846.png');
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-image: url('img/Screenshot\ 2022-12-02\ 20s3209.png');
+  background-size: cover;
+  background-position: unset;
+  background-repeat: no-repeat;
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* CSS untuk kalkulator pada ukuran layar desktop */
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* CSS untuk kalkulator pada ukuran layar smartphone */
+@media (max-width: 767px) {
+  .calculator {
+    max-width: 100%;
+    padding: 50px;
+  }
+}
